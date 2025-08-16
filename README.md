@@ -1,12 +1,59 @@
-# React + Vite
+# Portfólio Pessoal - Hiago Carlos
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Screenshot do Portfólio](.github/screenshot.png)
 
-Currently, two official plugins are available:
+Bem-vindo ao repositório do meu portfólio pessoal. Este projeto foi criado do zero para apresentar minhas habilidades, projetos e minha jornada como Desenvolvedor Fullstack.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**🔗 [Clique aqui para ver a demonstração ao vivo]([link-para-o-site-no-vercel])**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Sobre o Projeto
+
+O objetivo deste projeto foi criar uma página única (Single Page Application) moderna e totalmente responsiva para servir como meu cartão de visitas digital. Aqui, centralizo minhas informações profissionais, projetos mais relevantes e formas de contato, tudo isso com um design limpo e uma ótima experiência de usuário.
+
+O próprio portfólio é um projeto que demonstra minhas competências em desenvolvimento front-end com React.
+
+---
+
+## ✨ Features
+
+- **Design Responsivo:** Layout fluido que se adapta perfeitamente a desktops, tablets e smartphones.
+- **Componentes Reutilizáveis:** Estrutura de código limpa e modularizada para fácil manutenção.
+- **Navegação com Smooth Scroll:** Experiência de navegação suave ao clicar nos links do menu.
+- **Download de Currículo:** Funcionalidade para que visitantes possam baixar meu currículo em PDF.
+- **Cards de Projeto Dinâmicos:** Os projetos são carregados a partir de um arquivo de dados, facilitando a adição de novos trabalhos.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+Este projeto foi construído utilizando as seguintes tecnologias:
+
+- **[React](https://reactjs.org/)**: Biblioteca JavaScript para criar interfaces de usuário.
+- **[Vite](https://vitejs.dev/)**: Ferramenta de build moderna e ultrarrápida para o desenvolvimento front-end.
+- **[CSS Modules](https://github.com/css-modules/css-modules)**: Para estilização escopada por componente, evitando conflitos de classes.
+- **[React Icons](https://react-icons.github.io/react-icons/)**: Biblioteca para incluir ícones populares de forma fácil.
+
+---
+
+## 👨‍💻 Como Rodar o Projeto Localmente
+
+Siga os passos abaixo para executar o projeto em sua máquina.
+
+**Pré-requisitos:**
+- [Node.js](https://nodejs.org/en/) (versão 16 ou superior)
+- [Git](https://git-scm.com/)
+
+```bash
+# 1. Clone o repositório
+git clone [https://github.com/](https://github.com/)[seu-usuario]/portfolio-react.git
+
+# 2. Navegue até a pasta do projeto
+cd portfolio-react
+
+# 3. Instale as dependências
+npm install
+
+# 4. Inicie o servidor de desenvolvimento
+npm run dev
