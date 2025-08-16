@@ -1,0 +1,79 @@
+.card {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  overflow: hidden; /* Garante que a imagem não passe da borda arredondada */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.cardImage {
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Proporção de imagem widescreen */
+  object-fit: cover;
+  border-bottom: 1px solid #30363d;
+}
+
+.cardContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Faz este container crescer para preencher o espaço */
+}
+
+.cardTitle {
+  font-size: 1.5rem;
+  margin: 0 0 10px 0;
+  color: #fff;
+}
+
+.cardDescription {
+  font-size: 1rem;
+  line-height: 1.6;
+  flex-grow: 1; /* Empurra os links para o final */
+  margin-bottom: 20px;
+}
+
+.cardTags {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background-color: rgba(247, 110, 17, 0.15); /* Fundo laranja transparente */
+  color: #F76E11; /* Texto laranja */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.cardLinks {
+  display: flex;
+  gap: 20px;
+  margin-top: auto; /* Alinha os links na parte de baixo */
+}
+
+.link {
+  color: #C9D1D9;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.link:hover {
+  color: #F76E11;
+}

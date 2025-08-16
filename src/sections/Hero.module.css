@@ -1,0 +1,152 @@
+/* Container principal da seção Hero */
+.heroContainer {
+  display: flex; /* Usa flexbox para alinhar os itens lado a lado */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: space-between; /* Espaço entre o texto e a imagem */
+  padding: 0 10%; /* Espaçamento nas laterais */
+  min-height: 90vh; /* Altura mínima de quase toda a tela */
+  gap: 2rem; /* Espaço entre as colunas de texto e imagem */
+}
+
+/* Container do texto */
+.textContainer {
+  max-width: 50%;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative; /* Necessário para a linha decorativa */
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Linha decorativa laranja abaixo de "Hello." */
+.greeting::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 4px;
+  background-color: #F76E11; /* Cor laranja de destaque */
+  border-radius: 2px;
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.subtitle {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #C9D1D9;
+  line-height: 1.1;
+  margin-top: 5px;
+}
+
+/* Container para os botões */
+.buttonContainer {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px; /* Espaço entre os botões */
+}
+
+/* Estilo base para ambos os botões */
+.btnPrimary, .btnSecondary {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+/* Botão Primário (Laranja) */
+.btnPrimary {
+  background-color: #F76E11;
+  color: #0D1117; /* Texto escuro */
+  border: 2px solid #F76E11;
+}
+
+.btnPrimary:hover {
+  background-color: #ff8533;
+  transform: translateY(-3px); /* Efeito de flutuar */
+}
+
+/* Botão Secundário (Apenas borda) */
+.btnSecondary {
+  background-color: transparent;
+  color: #F76E11;
+  border: 2px solid #F76E11;
+}
+
+.btnSecondary:hover {
+  background-color: #F76E11;
+  color: #0D1117;
+  transform: translateY(-3px);
+}
+
+
+/* --- Estilos da Imagem --- */
+
+.imageContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Círculo laranja atrás da foto */
+.imageBackground {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-color: rgba(247, 110, 17, 0.2); /* Laranja com transparência */
+  border-radius: 50%;
+  z-index: 1; /* Fica atrás da imagem */
+}
+
+.profileImage {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: cover; /* Garante que a imagem não fique distorcida */
+  border: 5px solid #0D1117; /* Borda para separar do fundo */
+  z-index: 2; /* Fica na frente do círculo */
+}
+
+
+/* --- Responsividade para Telas Menores (Mobile) --- */
+@media (max-width: 992px) {
+  .heroContainer {
+    flex-direction: column-reverse; /* Coloca a imagem em cima do texto */
+    text-align: center; /* Centraliza todo o texto */
+    padding: 50px 5%;
+  }
+
+  .textContainer {
+    max-width: 100%;
+  }
+
+  .greeting::after {
+    left: 50%; /* Centraliza a linha decorativa */
+    transform: translateX(-50%);
+  }
+
+  .buttonContainer {
+    justify-content: center; /* Centraliza os botões */
+  }
+}
+
+@media (max-width: 480px) {
+    .title, .subtitle {
+        font-size: 2.5rem;
+    }
+    .profileImage, .imageBackground {
+        width: 280px;
+        height: 280px;
+    }
+}

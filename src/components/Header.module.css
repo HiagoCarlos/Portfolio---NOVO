@@ -1,0 +1,84 @@
+.header {
+  position: fixed; /* Fica fixo no topo da página */
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background-color: #0D1117; /* Mesma cor de fundo do body */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000; /* Garante que fique acima de todo o conteúdo */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para destacar */
+  box-sizing: border-box; /* Garante que o padding não aumente a largura total */
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #C9D1D9;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Esconde o botão do menu em telas grandes */
+.menuBtn {
+  display: none;
+  cursor: pointer;
+  color: #C9D1D9;
+}
+
+.menuList {
+  list-style: none;
+  display: flex;
+  gap: 35px; /* Espaço entre os links */
+  margin: 0;
+  padding: 0;
+}
+
+.menuItem a {
+  color: #C9D1D9;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menuItem a:hover {
+  color: #F76E11; /* Muda para laranja ao passar o mouse */
+}
+
+/* --- Estilos para o Menu Mobile (Responsivo) --- */
+@media (max-width: 768px) {
+  /* Mostra o botão do menu em telas pequenas */
+  .menuBtn {
+    display: block;
+    z-index: 1001; /* Fica acima do menu dropdown */
+  }
+
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%; /* Começa escondido fora da tela */
+    width: 60%;
+    height: 100vh;
+    background-color: #161b22; /* Um pouco mais claro que o fundo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.4s ease-in-out;
+  }
+  
+  /* Quando o menu está aberto, ele desliza para dentro da tela */
+  .menu.menuOpen {
+    right: 0;
+  }
+
+  .menuList {
+    flex-direction: column; /* Links ficam em coluna */
+    align-items: center;
+    gap: 40px;
+  }
+
+  .menuItem a {
+    font-size: 1.5rem; /* Aumenta a fonte para facilitar o toque */
+  }
+}

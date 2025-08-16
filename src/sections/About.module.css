@@ -1,0 +1,85 @@
+.aboutSection {
+  padding: 80px 10%;
+  background-color: #161b22; /* Um tom um pouco diferente para separar as seções */
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+/* Linha decorativa abaixo do título */
+.title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background-color: #F76E11; /* Laranja */
+    border-radius: 2px;
+}
+
+.aboutContent {
+  display: flex;
+  gap: 3rem; /* Espaço entre o texto e a lista de skills */
+  align-items: flex-start;
+}
+
+.aboutText {
+  flex: 1.5; /* Faz a coluna de texto ser um pouco maior */
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #C9D1D9;
+}
+
+.aboutText p {
+  margin-bottom: 20px;
+}
+
+.aboutSkills {
+  flex: 1; /* A coluna de skills ocupa o espaço restante */
+}
+
+.skillsTitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.skillsList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+  gap: 15px;
+}
+
+.skillItem {
+  background-color: #0D1117; /* Cor de fundo principal */
+  color: #C9D1D9;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 1px solid #30363d;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.skillItem:hover {
+  background-color: #F76E11;
+  color: #0D1117;
+  transform: translateY(-3px);
+  border-color: #F76E11;
+}
+
+/* --- Responsividade para Telas Menores --- */
+@media (max-width: 768px) {
+  .aboutContent {
+    flex-direction: column; /* Coloca o texto acima das skills */
+    gap: 40px;
+  }
+}
