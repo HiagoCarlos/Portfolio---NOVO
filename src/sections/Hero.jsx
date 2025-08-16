@@ -16,7 +16,7 @@ const Hero = () => {
         <div className={styles.buttonContainer}>
           <a href="#projects" className={styles.btnPrimary}>Got a project?</a>
           {/* Coloque o link para o seu currículo na pasta 'public' */}
-          <a href="/curriculo.pdf" download className={styles.btnSecondary}>My resume</a>
+          <a href="/Currículo.pdf" download className={styles.btnSecondary}>My resume</a>
         </div>
       </div>
 
