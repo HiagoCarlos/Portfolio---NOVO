@@ -4,16 +4,16 @@ import portfolioImg2 from '../assets/projeto2.png'; // Crie um screenshot do seu
 export const projectsData = [
   {
     id: 1,
-    title: "Páginas de Login e Registros",
-    description: "É um projeto focado exclusivamente em aprimorar as páginas de login e registro por meio de design atraente utilizando HTML e CSS. O objetivo é proporcionar uma experiência visualmente agradável aos usuários, mantendo a simplicidade e a usabilidade.",
+    title: "Login and Registration Pages",
+    description: "This project focuses exclusively on enhancing login and registration pages through attractive design using HTML and CSS. The goal is to provide a visually pleasing user experience while maintaining simplicity and usability.",
     image: portfolioImg,
     tags: ["CSS Modules", "Design Responsivo"],
     liveUrl: "https://hiagocarlos.github.io/Login-Registros/", 
     repoUrl: "https://github.com/HiagoCarlos/Login-Registros",
   },{
     id: 2,
-    title: "Central de Notificações — Gerador de MPs para Forumeiros (Habbo)",
-    description: "No JavaScript está toda a parte “de back”: o código roda no próprio domínio do fórum (ex.: uma página HTML hospedada no Forumeiros), aproveita a sessão já autenticada do usuário e os tokens nativos do fórum para compor e enviar a MP. O fluxo é simples: o usuário escolhe o tipo de requerimento, preenche os dados (destinatário(s), assunto e conteúdo), o sistema monta o texto em BBCode e dispara um POST para o endpoint de mensagens privadas do Forumeiros usando os dados da sessão atual — sem servidor externo, sem guardar credenciais e respeitando a política de mesma origem. Recursos principais: navegação por perfis (ex.: Inspetores/Diretores), validações, suporte a múltiplos destinatários, pré-visualização/geração do BBCode e envio assíncrono com retorno de status. Requisitos: estar logado no fórum e possuir permissão para enviar MPs. Resultado: notificações rápidas, padronizadas e sem fricção para a comunidade da RCC no Habbo.",
+    title: "Notification Center — PM Generator for Forum Users (Habbo)",
+    description: "The entire backend is JavaScript, and the code runs on the forum's own domain (e.g., an HTML page hosted on Forumeiros). It leverages the user's already authenticated session and the forum's native tokens to compose and send the PM. The flow is simple: the user chooses the request type, fills in the details (recipient(s), subject, and content). The system assembles the text in BBCode, and sends a POST to the Forumeiros private message endpoint using the current session data—no external server, no credentials stored, and respecting the same-origin policy. Key features: profile navigation (e.g., Inspectors/Directors), validations, support for multiple recipients, BBCode preview/generation, and asynchronous sending with status feedback. Requirements: being logged in to the forum and having permission to send PMs. The result: fast, standardized, and frictionless notifications for the RCC community on Habbo.",
     image: portfolioImg2,  
     tags: ["JavaScript", "HTML", "CSS"],
     liveUrl: "https://www.policiarcc.com/h139-tre-cpt-notificacoes-tb-tr#",
