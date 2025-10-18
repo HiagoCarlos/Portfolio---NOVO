@@ -6,17 +6,17 @@ const Hero = () => {
   return (
     <section className={styles.heroContainer}>
       <div className={styles.textContainer}>
-        <p className={styles.greeting}>Hello.</p>
+        <p className={styles.greeting}>Olá.</p>
         <h1 className={styles.title}>
-          <span>I'm </span>
+          <span>Eu sou</span>
           <span>Hiago Carlos</span>
         </h1>
-        <h2 className={styles.subtitle}>Fullstack developer</h2>
+        <h2 className={styles.subtitle}>Desenvolvedor Full Stack</h2>
 
         <div className={styles.buttonContainer}>
-          <a href="#projects" className={styles.btnPrimary}>Got a project?</a>
+          <a href="#projects" className={styles.btnPrimary}>Projetos</a>
           {/* Coloque o link para o seu currículo na pasta 'public' */}
-          <a href="/Currículo.pdf" download className={styles.btnSecondary}>My resume</a>
+          <a href="/Currículo.pdf" download className={styles.btnSecondary}>Download CV</a>
         </div>
       </div>
 

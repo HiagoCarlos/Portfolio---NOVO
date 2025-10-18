@@ -14,19 +14,18 @@ export const projectsData = [
   },{
     id: 2,
     title: "Central de Notificações — Gerador de PM para Usuários do Fórum (Habbo)",
-    description: "odo o backend é em JavaScript, e o código roda no próprio domínio do fórum (por exemplo, uma página HTML hospedada no Forumeiros). Ele utiliza a sessão já autenticada do usuário e os tokens nativos do fórum para compor e enviar a mensagem privada (PM). O fluxo é simples: o usuário escolhe o tipo de solicitação, preenche os detalhes (destinatário(s), assunto e conteúdo). O sistema monta o texto em BBCode e envia um POST para o endpoint de mensagens privadas do Forumeiros usando os dados da sessão atual — sem servidor externo, sem armazenamento de credenciais e respeitando a política de mesma origem. Principais recursos: navegação pelo perfil (ex.: Inspetores/Diretores), validações de dados, suporte para múltiplos destinatários, pré-visualização e geração de BBCode, envio assíncrono com feedback de status. Requisitos: estar logado no fórum e ter permissão para enviar PMs. Resultado: notificações rápidas, padronizadas e sem atrito para a comunidade RCC no Habbo.",
+    description: "Sistema em JavaScript para enviar PMs padronizadas no fórum da RCC. Ele roda 100% no front-end, usando a sessão do usuário para formatar e enviar a mensagem ao endpoint nativo do fórum. É rápido, seguro e não exige servidor.",
     image: portfolioImg2,  
     tags: ["JavaScript", "HTML", "CSS"],
     liveUrl: "https://www.policiarcc.com/h139-tre-cpt-notificacoes-tb-tr#",
     repoUrl: "https://github.com/HiagoCarlos/Projeto-CPT-INS-DIR "},
     {
     id: 3,
-    title: "Seu Projeto Aqui",
-    description: "Descrição do seu projeto.",
+    title: "Página de Chat em Java com Sockets e Threads",
+    description: "Implementação de um sistema de chat distribuído em Java, focado nos fundamentos de comunicação e concorrência. O servidor utiliza java.net.Socket para conexões de rede e um pool de Threads (ExecutorService) para lidar com múltiplos clientes simultaneamente, coordenando o envio de mensagens entre diferentes salas.",
     image: portfolioImg3, 
-    tags: ["Tag1", "Tag2", "Tag3"],
-    liveUrl: "https://link-da-demo.com",
-    repoUrl: " "
+    tags: ["Java", "HTML", "CSS"],
+    repoUrl: "https://github.com/HiagoCarlos/trabalho_final"
     }
   // {
   //   id: 2,

@@ -5,7 +5,7 @@ import { FaGithub, FaLinkedin, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 const Contact = () => {
   return (
     <section id="contact" className={styles.contactSection}>
-      <h2 className={styles.title}>Get in Touch</h2>
+      <h2 className={styles.title}>Contatos</h2>
       <p className={styles.description}>
         Estou aberto(a) a novas oportunidades. Sinta-se à vontade para entrar em contato!
       </p>
