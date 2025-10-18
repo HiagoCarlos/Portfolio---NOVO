@@ -35,6 +35,7 @@ const About = () => {
             <li className={styles.skillItem}>Vue.js</li>
             <li className={styles.skillItem}>MongoDB</li>
             <li className={styles.skillItem}>Figma</li>
+            <li className={styles.skillItem}>PostgreSQL</li>
           </ul>
         </div>
       </div>
