@@ -1,23 +1,33 @@
 // Importe as imagens dos seus projetos aqui
-import portfolioImg from '../assets/projeto1.png'; // Crie um screenshot do seu portfólio e salve com este nome
-import portfolioImg2 from '../assets/projeto2.png'; // Crie um screenshot do seu segundo projeto e salve com este nome
+import portfolioImg from '../assets/projeto1.png'; 
+import portfolioImg2 from '../assets/projeto2.png'; 
+import portfolioImg3 from '../assets/projeto3.png'; 
 export const projectsData = [
   {
     id: 1,
-    title: "Login and Registration Pages",
-    description: "This project focuses exclusively on enhancing login and registration pages through attractive design using HTML and CSS. The goal is to provide a visually pleasing user experience while maintaining simplicity and usability.",
+    title: "Página de Login e Registro",
+    description: "Este projeto foca exclusivamente em aprimorar as páginas de login e registro por meio de um design atraente usando HTML e CSS. O objetivo é proporcionar uma experiência visualmente agradável para o usuário, mantendo simplicidade e usabilidade.",
     image: portfolioImg,
     tags: ["CSS Modules", "Design Responsivo"],
     liveUrl: "https://hiagocarlos.github.io/Login-Registros/", 
     repoUrl: "https://github.com/HiagoCarlos/Login-Registros",
   },{
     id: 2,
-    title: "Notification Center — PM Generator for Forum Users (Habbo)",
-    description: "The entire backend is JavaScript, and the code runs on the forum's own domain (e.g., an HTML page hosted on Forumeiros). It leverages the user's already authenticated session and the forum's native tokens to compose and send the PM. The flow is simple: the user chooses the request type, fills in the details (recipient(s), subject, and content). The system assembles the text in BBCode, and sends a POST to the Forumeiros private message endpoint using the current session data—no external server, no credentials stored, and respecting the same-origin policy. Key features: profile navigation (e.g., Inspectors/Directors), validations, support for multiple recipients, BBCode preview/generation, and asynchronous sending with status feedback. Requirements: being logged in to the forum and having permission to send PMs. The result: fast, standardized, and frictionless notifications for the RCC community on Habbo.",
+    title: "Central de Notificações — Gerador de PM para Usuários do Fórum (Habbo)",
+    description: "odo o backend é em JavaScript, e o código roda no próprio domínio do fórum (por exemplo, uma página HTML hospedada no Forumeiros). Ele utiliza a sessão já autenticada do usuário e os tokens nativos do fórum para compor e enviar a mensagem privada (PM). O fluxo é simples: o usuário escolhe o tipo de solicitação, preenche os detalhes (destinatário(s), assunto e conteúdo). O sistema monta o texto em BBCode e envia um POST para o endpoint de mensagens privadas do Forumeiros usando os dados da sessão atual — sem servidor externo, sem armazenamento de credenciais e respeitando a política de mesma origem. Principais recursos: navegação pelo perfil (ex.: Inspetores/Diretores), validações de dados, suporte para múltiplos destinatários, pré-visualização e geração de BBCode, envio assíncrono com feedback de status. Requisitos: estar logado no fórum e ter permissão para enviar PMs. Resultado: notificações rápidas, padronizadas e sem atrito para a comunidade RCC no Habbo.",
     image: portfolioImg2,  
     tags: ["JavaScript", "HTML", "CSS"],
     liveUrl: "https://www.policiarcc.com/h139-tre-cpt-notificacoes-tb-tr#",
-    repoUrl: "https://github.com/HiagoCarlos/Projeto-CPT-INS-DIR "}
+    repoUrl: "https://github.com/HiagoCarlos/Projeto-CPT-INS-DIR "},
+    {
+    id: 3,
+    title: "Seu Projeto Aqui",
+    description: "Descrição do seu projeto.",
+    image: portfolioImg3, 
+    tags: ["Tag1", "Tag2", "Tag3"],
+    liveUrl: "https://link-da-demo.com",
+    repoUrl: " "
+    }
   // {
   //   id: 2,
   //   title: "Outro Projeto",
