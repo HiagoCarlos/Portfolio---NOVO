@@ -6,7 +6,7 @@ import ProjectCard from '../components/ProjectCard.jsx'; // Importando nosso car
 const Projects = () => {
   return (
     <section id="projects" className={styles.projectsSection}>
-      <h2 className={styles.title}>My Projects</h2>
+      <h2 className={styles.title}>Projects</h2>
       <div className={styles.projectsGrid}>
         {projectsData.map((project) => (
           <ProjectCard key={project.id} project={project} />

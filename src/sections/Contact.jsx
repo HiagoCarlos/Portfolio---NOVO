@@ -7,7 +7,7 @@ const Contact = () => {
     <section id="contact" className={styles.contactSection}>
       <h2 className={styles.title}>Get in Touch</h2>
       <p className={styles.description}>
-        I'm currently open to new opportunities. Feel free to contact me! Whether you have a question or just want to say hi, I'll do my best to get back to you!
+        Estou aberto(a) a novas oportunidades. Sinta-se à vontade para entrar em contato!
       </p>
       <div className={styles.contactLinks}>
         <a 
