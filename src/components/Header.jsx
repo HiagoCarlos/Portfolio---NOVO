@@ -10,12 +10,12 @@ const Header = () => {
     <header className={styles.header}>
       <a href="/" className={styles.logo}>Portfólio</a>
 
-      {/* Botão do menu hambúrguer, só aparece em telas menores */}
+      
       <div className={styles.menuBtn} onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FaTimes size={25} /> : <FaBars size={25} />}
       </div>
 
-      {/* Lista de links de navegação */}
+     
       <nav className={`${styles.menu} ${menuOpen ? styles.menuOpen : ''}`}>
         <ul className={styles.menuList}>
           <li className={styles.menuItem}><a href="#hero" onClick={() => setMenuOpen(false)}>Home</a></li>
