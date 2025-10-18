@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Hero.module.css'; // Importando os estilos do nosso módulo
-import fotoPerfil from '../assets/fotoPerfil.png'; // IMPORTANTE: Verifique se o nome do arquivo da sua foto está correto
+import fotoPerfil from '../assets/fotoPerfil.PNG'; // IMPORTANTE: Verifique se o nome do arquivo da sua foto está correto
 
 const Hero = () => {
   return (
