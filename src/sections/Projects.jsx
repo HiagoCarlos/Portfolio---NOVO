@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Projects.module.css';
-import { projectsData } from '../data/projectsData.js'; // Importando nossos dados
-import ProjectCard from '../components/ProjectCard.jsx'; // Importando nosso card
+import { projectsData } from '../data/projectsData.js'; 
+import ProjectCard from '../components/ProjectCard.jsx'; 
 
 const Projects = () => {
   return (

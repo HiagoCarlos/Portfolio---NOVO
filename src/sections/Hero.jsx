@@ -1,7 +1,6 @@
 import React from 'react';
-import styles from './Hero.module.css'; // Importando os estilos do nosso módulo
-import fotoPerfil from '../assets/fotoPerfil.PNG'; // IMPORTANTE: Verifique se o nome do arquivo da sua foto está correto
-
+import styles from './Hero.module.css'; 
+import fotoPerfil from '../assets/fotoPerfil.jpeg'; 
 const Hero = () => {
   return (
     <section className={styles.heroContainer}>
@@ -23,7 +22,7 @@ const Hero = () => {
         <div className={styles.imageBackground}></div>
         <img 
           src={fotoPerfil} 
-          alt="Foto de perfil de [Seu Nome]" 
+          alt="Foto de perfil de Hiago Carlos" 
           className={styles.profileImage} 
         />
       </div>

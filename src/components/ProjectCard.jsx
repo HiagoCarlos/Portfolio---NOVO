@@ -3,7 +3,7 @@ import styles from './ProjectCard.module.css';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const ProjectCard = ({ project }) => {
-  const { title, description, image, tags, liveUrl, repoUrl } = project;
+  const { title, description, image, tags, liveUrl, repoUrl , EmDesenvolvimento} = project;
 
   return (
     <div className={styles.card}>
@@ -25,6 +25,11 @@ const ProjectCard = ({ project }) => {
           {repoUrl && (
             <a href={repoUrl} target="_blank" rel="noopener noreferrer" className={styles.link}>
               <FaGithub /> Código
+            </a>
+            )}
+         {EmDesenvolvimento && (
+            <a href={EmDesenvolvimento} target="_blank" rel="noopener noreferrer" className={styles.link}>
+              <FaExternalLinkAlt /> Em desenvolvimento
             </a>
           )}
         </div>

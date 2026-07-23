@@ -2,6 +2,9 @@
 import portfolioImg from '../assets/projeto1.png'; 
 import portfolioImg2 from '../assets/projeto2.png'; 
 import portfolioImg3 from '../assets/projeto3.png'; 
+import sistemaEscola from '../assets/projeto4.png';
+import saas from '../assets/projeto6.png';
+import bingo from '../assets/projeto5.png';
 export const projectsData = [
   {
     id: 1,
@@ -11,7 +14,8 @@ export const projectsData = [
     tags: ["CSS Modules", "Design Responsivo"],
     liveUrl: "https://hiagocarlos.github.io/Login-Registros/", 
     repoUrl: "https://github.com/HiagoCarlos/Login-Registros",
-  },{
+  },
+  {
     id: 2,
     title: "Central de Notificações — Gerador de PM para Usuários do Fórum (Habbo)",
     description: "Sistema em JavaScript para enviar PMs padronizadas no fórum da RCC. Ele roda 100% no front-end, usando a sessão do usuário para formatar e enviar a mensagem ao endpoint nativo do fórum. É rápido, seguro e não exige servidor.",
@@ -26,14 +30,40 @@ export const projectsData = [
     image: portfolioImg3, 
     tags: ["Java", "HTML", "CSS"],
     repoUrl: "https://github.com/HiagoCarlos/trabalho_final"
-    }
-  // {
-  //   id: 2,
-  //   title: "Outro Projeto",
-  //   description: "Descrição do seu outro projeto.",
-  //   image: outraImagem,
-  //   tags: ["React", "Node.js", "Express"],
-  //   liveUrl: "https://link-da-demo.com",
-  //   repoUrl: "https://github.com/seu-usuario/outro-projeto",
-  // },
+    },
+    {
+  id: 4,
+  title: "Sistema de Gestão Escolar",
+  description:
+    "Sistema web Full Stack para gerenciamento escolar, com autenticação de usuários, dashboard, gerenciamento de alunos, professores e turmas. Desenvolvido utilizando React, TypeScript e integração com APIs.",
+  image: sistemaEscola,
+  tags: [
+    "React",
+    "TypeScript",
+    "JavaScript",
+    "API REST",
+    "CSS"
+  ],
+  liveUrl: "https://sistema-escola-rouge.vercel.app/dashboard",
+  repoUrl: "https://github.com/HiagoCarlos/Sistema_Escola"
+},
+    {
+    id: 5,
+    title: "Sistema SaaS para Gestão",
+    description:
+      "Sistema Full Stack desenvolvido com Java Spring Boot no back-end e React + TypeScript no front-end. Possui autenticação, gerenciamento de usuários, banco de dados SQL e arquitetura em camadas.",
+    image: saas,
+    tags: ["Java", "Spring Boot", "React", "TypeScript", "SQL"],
+    EmDesenvolvimento: "Em desenvolvimento"
+  },
+    {
+    id: 6,
+    title: "Bingo Online",
+    description:
+      "Sistema web para gerenciamento de partidas de bingo online com atualização em tempo real, desenvolvido em Node.js.",
+    image: bingo,
+    tags: ["Node.js", "JavaScript", "Express"],
+    liveUrl: "https://bingo-fest.onrender.com/",
+    repoUrl: "https://github.com/HiagoCarlos/bingo-fest"
+  },
 ];
